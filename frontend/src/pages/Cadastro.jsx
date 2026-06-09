@@ -1,10 +1,13 @@
 import '../styles/cadastro.css'
+import { useNavigate } from 'react-router-dom'
 
 export default function Cadastro() {
+    const navigate = useNavigate()
+    
     return (
         <div className="login-page">
             <div className="login-card">
-                <div className="back-button">⭠ Voltar</div>
+                <button className="back-button" onClick={() => navigate('/login')}>⭠ Voltar</button>
                 <div className="logo-circle">✈</div>
                 <h1>Criar Conta</h1>
                 
@@ -21,7 +24,6 @@ export default function Cadastro() {
                     <button>Cadastrar</button>
                 </form>
                 
-                <p className="signup-link">Já tem uma conta? <a href="#">Faça login</a></p>
             </div>
         </div>
     )

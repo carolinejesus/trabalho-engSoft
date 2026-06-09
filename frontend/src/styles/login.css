@@ -123,3 +123,27 @@ button:hover{
   font-weight:bold;
   cursor:pointer;
 }
+
+.signup-link {
+  margin-top: 35px;
+  color: #6a8bb7;
+  font-size: 18px;
+}
+
+.signup-link span {
+  font-weight: bold;
+  cursor: pointer;
+  color: #0f2f5c;
+}
+
+.signup-link span:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: #b3261e;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0;
+}

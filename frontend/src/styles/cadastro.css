@@ -34,17 +34,23 @@ body{
 }
 
 .back-button{
-  width:100%;
+  width:auto;
+  align-self: flex-start;
+  background: none;
   color:#6f8fbb;
   font-size:16px;
   font-weight:600;
   cursor:pointer;
+  margin-top: 0;
   margin-bottom:20px;
+  padding: 0;
+  border: none;
   transition:0.2s;
 }
 
 .back-button:hover{
   color:#0f2f5c;
+  opacity: 1;
 }
 
 /*Logo*/
