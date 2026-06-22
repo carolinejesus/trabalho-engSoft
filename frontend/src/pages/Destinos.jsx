@@ -49,7 +49,7 @@ export default function Destinos (){
                 <button 
                     type="button"
                     className="destinos-back-button"
-                    onClick={() => navigate('/dashboard')}
+                    onClick={() => navigate('/home')}
                 >
                     ← Voltar
                 </button>
@@ -61,7 +61,8 @@ export default function Destinos (){
                 <div className="destinos-top">
                     <h2>Destinos</h2>
 
-                    <button className="add-destino-button">
+                    <button className="add-destino-button"
+                        onClick={() => navigate(`/viagem/${id}/adicionar/destino`)}>
                         + Adicionar Destino
                     </button>
                 </div>
