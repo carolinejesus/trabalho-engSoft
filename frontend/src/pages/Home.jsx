@@ -44,7 +44,7 @@ export default function Home() {
 
         <div className='trips-container'>
           {viagens.map((viagem) => (
-            <div className='trip-card' key={viagem.id} onClick={() => navigate(`/roteiro/${viagem.id}`)}>
+            <div className='trip-card' key={viagem.id} onClick={() => navigate(`/viagem/${viagem.id}/destinos`)}>
               <div className='trip-header'>
                 <h2>{viagem.titulo}</h2>
                 <span className={viagem.status === 'Confirmada'
