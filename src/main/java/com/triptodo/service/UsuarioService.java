@@ -75,4 +75,17 @@ public class UsuarioService {
             }
         });
     }
+
+    @Transactional(readOnly = true)
+    public UsuarioResponseDTO login(String email, String senha) {
+
+        Usuario usuario = usuarioRepository.findByEmail(email)
+                .orElseThrow(() -> new BusinessException("Email ou senha inválidos."));
+
+        if (!usuario.getSenha().equals(senha)) {
+            throw new BusinessException("Email ou senha inválidos.");
+        }
+
+        return new UsuarioResponseDTO(usuario);
+    }
 }
